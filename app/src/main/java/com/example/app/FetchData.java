@@ -46,12 +46,12 @@ public class FetchData extends AsyncTask<String, listItem, Void> {
         StringBuilder builder = new StringBuilder();
 
         // Set Foursquare API Keys
-        final String CLIENT_ID = "141W4JNRKQRNCETDIKNP3CQSNY5YV1N3VXOEJYQ1MSOEY5NJ";
-        final String CLIENT_PASSWORD = "WFPTH0UWNJWDSC0ZXKERP3TAMICR3YXXPH0PF1UH2SOMK1I0";
+        final String CLIENT_ID = "TNWILVWASED2M5VF2OERZJIBUCXMHMFPNSPJC1AQR0TDV42M";
+        final String CLIENT_PASSWORD = "VVMLEF2OTHPKQTYFL2YH5X22ZTHKOKEC42BEU0LPP5FEWX3M";
 
-        // Coordinates of Miami Dade College Wolfson Campus (for Testing Purposes)
-        final String Latitude = "25.777657";
-        final String Longitude = "-80.190532";
+        // Coordinates of hyderabad cyber towers (for Testing Purposes)
+        final String Latitude = "17.4504";
+        final String Longitude = "78.3810";
 
         // Setup URL where Param is the Query
         String completeURL = "https://api.foursquare.com/v2/venues/search?ll=" + Latitude + "," + Longitude + "&client_id=" + CLIENT_ID + "&client_secret=" + CLIENT_PASSWORD + "&v=20151110&limit=20&venuePhotos=1&query=" + params[0];
